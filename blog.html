@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="sticky top-0 bg-white z-10 backdrop-filter backdrop-blur-lg bg-opacity-30 ">
+    <nav class="flex justify-around items-center bg-[#F9F7F3] h-24 ">
+        <div><button class="btn btn-outline btn-info lg:text-xl btn-active">Blog</button></div>
+        <div class="flex items-center lg:gap-3 gap-1">
+            <img src="./assets/logo.png" alt="" srcset="">
+         <h3 class=" lg:text-xl font-bold">Donate Bangladesh</h3>
+        </div>
+        <div class="flex items-center gap-3">
+            <img src="./assets/coin.png" alt="" srcset="">
+            <h3 class="lg:text-xl text-[#111111B3]"><span>5500</span>BDT</h3>
+        </div>
+    </nav>
+</div>
+    
+
+    <div class="lg:mx-14 mx-5 my-20">
+        <h1 class="text-5xl font-extrabold mb-10">Important FAQ</h1>
+
+        <div class="join join-vertical w-full">
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" checked="checked" />
+              <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+              <div class="collapse-content">
+                <p>The Document Object Model (DOM) is like a tree of objects that represents your web page. Think of it as a way for your JavaScript code to interact with and change the content, structure, and style of your web page.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+              <div class="collapse-content">
+                <p>To select elements from the DOM, we can use different methods:
+
+                    By ID: If we have an element with a specific ID, you can select it using that ID.
+                    By Class Name: we can select elements that have a specific class name.
+                    By Tag Name: You can select all elements of a certain type, like all <div> elements.
+                    By CSS Selector: You can select elements using CSS selectors, which can be very specific or general.
+                    All Matching Elements: You can select all elements that match a CSS selector.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?
+            </div>
+              <div class="collapse-content">
+                <p>Event delegation is a technique where you add a single event listener to a parent element instead of adding multiple event listeners to individual child elements. This is useful because it makes your code cleaner and more efficient, especially when dealing with many elements or elements that are added dynamically.</p>
+              </div>
+            </div>
+            <div class="collapse collapse-arrow join-item border-base-300 border">
+              <input type="radio" name="my-accordion-4" />
+              <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?
+            </div>
+              <div class="collapse-content">
+                <p>You can change an element’s attributes and styles using JavaScript:
+
+                    Attributes: You can set, get, or remove attributes of an element.
+                    Styles: You can directly change the styles of an element, like its color or font size. You can also add, remove, or toggle classes to change its appearance.</p>
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+
+
+<script src="./script.js"></script>
+ <!-- <script src="./secend.js"></script> -->
+</body>
+</html>

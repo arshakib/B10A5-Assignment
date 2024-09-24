@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <div id="alert" class="w-[100vw] h-[100vh] absolute top-0 bg-white z-10 backdrop-filter backdrop-blur-lg bg-opacity-30 hidden">
+
+        <div class="absolute lg:top-[40%] top-[40%] lg:left-[41%] left-[12%] text-center bg-white lg:py-10 py-5 lg:px-20 px-10 rounded-lg ">
+            <h1 class="text-4xl font-bold mb-5">Congrats!</h1>
+            <img class="mx-auto mb-4" src="./assets/coin.png" alt="" srcset="">
+            <h4 class="mb-4">You Have Donated For Humankind</h4>
+            <h2 class="text-2xl font-bold mb-4">successfully</h2>
+            <button id="alertClose" class="btn">Close Information</button>
+        </div>
+
+    </div>
+    
+    <div class="sticky top-0 bg-white z-10 backdrop-filter backdrop-blur-lg bg-opacity-30 ">
+    <nav class="flex justify-around items-center bg-[#F9F7F3] h-24 ">
+        <div><button  id="blog" class="btn btn-outline btn-info lg:text-xl">Blog</button></div>
+        <div class="flex items-center lg:gap-3 gap-1">
+            <img src="./assets/logo.png" alt="" srcset="">
+         <h3 class=" lg:text-xl font-bold">Donate Bangladesh</h3>
+        </div>
+        <div class="flex items-center gap-3">
+            <img src="./assets/coin.png" alt="" srcset="">
+            <h3 class="lg:text-xl text-[#111111B3]"><span id="mainAmount">5500</span>BDT</h3>
+        </div>
+    </nav>
+
+    <div class="flex justify-center gap-4 lg:mt-10 mt-4 pb-5 ">
+        <button id="donation-btn" class="btn btn-outline btn-info btn-active text-xl">Donation</button>
+        <button id="history" class="btn btn-outline btn-info text-xl">History</button>
+    </div>
+</div>
+
+
+<div id="page1">
+<div class="mb-16">
+<div class="lg:mx-48 mx-5 mt-6">
+    <div class="flex flex-col lg:flex-row p-5 border-solid border-2 rounded-lg">
+        <div class="lg:w-1/2">
+            <img class="" src="./assets/noakhali.png" alt="" srcset="">
+        </div>
+
+        <div  class="lg:w-1/2 ">
+            <div class=" flex items-center bg-[#1111110D] p-2 mb-4 mt-4 w-fit rounded-lg">
+                <img src="./assets/coin.png" alt="" srcset="">
+                <h5 class=""><span id="donate1" class="donate">100</span>BDT</h5>
+            </div>
+            <div class="">
+                <h3 class="text-xl text-black font-bold mb-6">Donate for <span id="noakhali">Flood at Noakhali</span>, Bangladesh</h3>
+                <p class="mb-5"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+
+                <input id="input" type="number" placeholder="Write Donation Amount" class="input input-bordered w-full mb-5 inputBtn" />
+                <button id="btn1" class="btn btn-outline btn-info w-full mb-5 subBtn">Donate Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="lg:mx-48 mx-5 mt-6">
+    <div class="flex flex-col lg:flex-row p-5 border-solid border-2 rounded-lg">
+        <div class="lg:w-1/2">
+            <img src="./assets/feni.png" alt="" srcset="">
+        </div>
+
+        <div  class="lg:w-1/2">
+            <div class=" flex  items-center bg-[#1111110D] p-2 mb-4 mt-4 w-fit rounded-lg">
+                <img src="./assets/coin.png" alt="" srcset="">
+                <h5 class=""><span id="donate2" class="donate">100</span>BDT</h5>
+            </div>
+            <div class="">
+                <h3 class="text-xl text-black font-bold mb-6">Donate for <span id="feni">Flood Relief in Feni</span>,Bangladesh</h3>
+                <p class="mb-5"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+
+                <input id="input2" type="number" placeholder="Write Donation Amount" class="input input-bordered w-full mb-5 inputBtn" />
+                <button id="btn2" class="btn btn-outline btn-info w-full mb-5 subBtn">Donate Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="lg:mx-48 mx-5 mt-6">
+    <div class="flex flex-col lg:flex-row p-5 border-solid border-2 rounded-lg">
+        <div class="lg:w-1/2">
+            <img src="./assets/quota-protest.png" alt="" srcset="">
+        </div>
+
+        <div  class="lg:w-1/2">
+            <div class=" flex items-center bg-[#1111110D] p-2 mb-4 mt-4 w-fit rounded-lg">
+                <img src="./assets/coin.png" alt="" srcset="">
+                <h5 class=""><span id="donate3" class="donate">100</span>BDT</h5>
+            </div>
+            <div class="">
+                <h3 class="text-xl text-black font-bold mb-6">Aid for Injured in the <span id="quota">Quota Movement</span></h3>
+                <p class="mb-5"> The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+
+                <input id="input3" type="text" placeholder="Write Donation Amount" class="input input-bordered w-full mb-5" />
+                <button id="btn3" class="btn btn-outline btn-info w-full mb-5 subBtn">Donate Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<div id="page2" class="hidden">
+    <div id="div">
+    <!-- <div class=" lg:mx-40 mx-5 pb-5">
+        <div class="p-5 border-solid border-2 rounded-lg">
+            <h2 class="text-xl font-bold mb-3">96500 Taka is Donated for famine-2024 at Feni, Bangladesh</h2>
+    
+            <h4>Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)</h4>
+        </div>
+    
+    </div> -->
+</div>
+</div>
+
+
+
+
+
+    <script src="./script3.js"></script>
+    <script src="./cal2.js"></script>
+    <script src="./blog.js"></script>
+    <!-- <script src="./secend.js"></script> -->
+</body>
+</html>
