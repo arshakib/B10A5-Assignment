@@ -1,3 +1,3 @@
-function blog() {
-    window.location.href = "blog.html";
+function blog(pageLoc) {
+    window.location.href = pageLoc;
 }
